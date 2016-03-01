@@ -1,0 +1,32 @@
+h1 {color:red;}
+.h2 {background-color:yellow;}
+p, h2 {color:blue;
+   font-style:italic;
+   font-family: 'PT Sans', sans-serif;    
+  }
+p::first-letter{color:red;}
+#l-header {
+    float: left;
+    margin: auto;
+    width: 40%;
+    max-width: 500px;
+    background-color:lightgreen;
+}
+#r-header {
+    float: right;
+    margin: auto;
+    width: 40%;
+    max-width: 500px;
+    background-color:orange;
+}
+#c-header {
+    margin: auto;
+    max-width: 20%;
+    background-color:yellow;
+}
+#main-item {
+    position: absolute;
+    left: 300px;
+    border-radius: 10px;
+    background-color:lightblue;
+}
