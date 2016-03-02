@@ -1,34 +1,63 @@
+html { 
+    font-style: italic;
+    font-family: 'PT Sans', sans-serif;
+
+    background: url(../img/bg-road-to-sky-S.jpg) no-repeat center fixed;
+    background-size: cover;
+}
 h1 {color:red;}
-.h2 {background-color:yellow;}
-p, h2 {color:blue;
-   font-style:italic;
-   font-family: 'PT Sans', sans-serif;    
-  }
+h2 {background-color:yellow;}
+p {
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
 p::first-letter{color:red;}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    background-color: lightgreen;
+}
+.flex-item-LR {
+    background-color: cornflowerblue;
+    width: 40%;
+    margin: 10px;
+}
+.flex-item-C {
+    background-color: yellow;
+    width: auto;
+    margin: 5px;
+    transition: background 2s, transform 2s;
+}
+.flex-item-LR:hover + .flex-item-C {
+    background: none;
+    transform: rotateY(180deg);
+    }
+
 #l-header {
     float: left;
     margin: auto;
-    width: 40%;
+    width: 38%;
     max-width: 500px;
     background-color:lightgreen;
 }
 #r-header {
     float: right;
     margin: auto;
-    width: 40%;
+    width: 38%;
     max-width: 500px;
     background-color:orange;
 }
 #c-header {
     margin: auto;
-    max-width: 20%;
-    background-color: yellow;
+    max-width: 18%;
     transition: background 2s, transform 2s;
 }
-#r-header:hover + #c-header {
-    background: none;
-    transform: rotateY(180deg);
-    }
 #main-item {
     position: absolute;
     left: 300px;
