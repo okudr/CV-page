@@ -21,9 +21,11 @@ p::first-letter{color:red;}
     width: 100%;
     height: 200px;
     transition: opacity 1s;
-    background-color: lightgreen;
 }
-.flex-head-BOX:hover {
+.flex-head-BOX-bg {
+    background-color: lightgreen;
+    }
+.flex-head-BOX-bg:hover {
     opacity: 0.5;
     }
 .flex-head-LR {
@@ -56,8 +58,8 @@ p::first-letter{color:red;}
     float: left;
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content:  flex-start;
-    justify-content:  flex-start;
+    -webkit-justify-content: none;
+    justify-content: none;
     width: 60%;
     height: 140px;
     margin-bottom: 10px;
@@ -71,8 +73,8 @@ p::first-letter{color:red;}
     float: right;
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content:  flex-end;
-    justify-content:  flex-end;
+    -webkit-justify-content: none;
+    justify-content: none;
     width: 60%;
     height: 140px;
     margin-bottom: 10px;
@@ -82,28 +84,27 @@ p::first-letter{color:red;}
 .flex-body-BOX-R:hover {
     background: none;
     }
-.flex-body-item-C {
-    margin: 10px 0;
-    max-width: 40%;
-    text-align: center;
-    border-radius: 5px;
-    background-color: cornflowerblue;
-}
 .flex-body-item-L {
-    margin-left: 20px;
+    margin: 20px 0 20px auto;
     max-width: 60%;
     overflow: hidden;
     border-radius: 10px 0 0 10px;
     background-color: lightblue;
-    margin-right: auto;
+}
+.flex-body-item-C {
+    margin: 10px 0;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: cornflowerblue;
 }
 .flex-body-item-R {
-    margin-right: 20px;
+    margin: 20px auto 20px 0;
     max-width: 60%;
     overflow: hidden;
     border-radius: 0 10px 10px 0;
     background-color: lightblue;
-    margin-left: auto;
 }
 .flex-foot-BOX {
     margin-top: 10px;
