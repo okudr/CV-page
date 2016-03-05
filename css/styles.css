@@ -4,11 +4,20 @@ html {
     background: url(../img/bg-road-to-sky-S.jpg) no-repeat center fixed;
     background-size: cover;
 }
-h1 { color: red; }
+h1 {
+    color: red;
+    text-shadow: 2px 2px 3px white;
+/*    font-family: 'Lobster', cursive; */
+}
+span {
+    color: yellow;
+}
 p {
     color: white;
     border-radius: 20px;
     padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 p::first-letter { color: red; }
 
@@ -39,20 +48,27 @@ p::first-letter { color: red; }
     transition: background 2s, transform 2s;
     background-color: yellow;
 }
-.flex-head-LR:hover ~ #flex-head-C {
+
+#flex-head-C:hover {
     background: none;
-    transform: rotateY(180deg);
+    transform: rotate(180deg);
 }
 
 .flex-body-bookmark {
-    margin: auto;
+    margin: auto auto 10px;
     width: 18%;
     color: DodgerBlue;
     font-weight: bold;
     text-align: center;
+    padding: 5px 0;
     background-color: LightCoral;
+    box-shadow: 5px 5px 5px white;
 }
-
+/*
+.flex-body-bookmark:hover {
+    margin-bottom: 0px;
+}
+*/
 .flex-body-BOX-LCR {
     display: -webkit-flex;
     display: flex;
@@ -67,6 +83,7 @@ p::first-letter { color: red; }
     background: lightgreen;
 }
 .flex-body-item-L {
+    text-align: right;
     margin: 20px 0 20px auto;
     width: 38%;
     overflow: hidden;
@@ -87,7 +104,8 @@ p::first-letter { color: red; }
     border-radius: 0 10px 10px 0;
     background-color: lightblue;
 }
-.hide { visibility: hidden; }
+
+.hide { visibility: hidden; padding: 0;}
 
 .flex-foot-BOX {
     margin-top: 10px;
