@@ -30,20 +30,22 @@ p::first-letter { color: red; }
     height: 200px;
     transition: opacity 1s;
 }
+/*
 .flex-head-BOX-bg {
     background-color: lightgreen;
 }
 .flex-head-BOX-bg:hover {
     opacity: 0.5;
 }
+*/
 .flex-head-LR {
-    width: 40%;
+    width: 30%;
     margin: 40px 10px;
     overflow: hidden;
     background-color: cornflowerblue;
 }
 #flex-head-C {
-    width: auto;
+    max-width: 100%;
     margin: 5px;
     transition: background 2s, transform 2s;
     background-color: yellow;
@@ -51,12 +53,12 @@ p::first-letter { color: red; }
 
 #flex-head-C:hover {
     background: none;
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
 }
 
 .flex-body-bookmark {
     margin: auto auto 10px;
-    width: 18%;
+    width: 20%;
     color: DodgerBlue;
     font-weight: bold;
     text-align: center;
@@ -70,9 +72,7 @@ p::first-letter { color: red; }
 }
 */
 .flex-body-BOX-LCR {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-around;
+    display: none;
     justify-content: space-around;
     width: 100%;
     height: 140px;
@@ -106,11 +106,15 @@ p::first-letter { color: red; }
 }
 
 .hide { visibility: hidden; padding: 0;}
+@media screen and (max-width: 800px) {
+    .hide {
+        display: none;
+    }
+}
 
 .flex-foot-BOX {
-    margin-top: 10px;
-    display: -webkit-flex;
     display: flex;
+    margin-top: 10px;
     width: 100%;
     height: 120px;
     transition: opacity 1s;
